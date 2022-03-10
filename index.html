@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body class="main-body">
+    <div class="container board">
+      <div class="row">
+        <div id="cell-1" data-cell="1" class="col-md-4 rounded board-cell"></div>
+        <div id="cell-2" data-cell="2" class="col-md-4 rounded board-cell"></div>
+        <div id="cell-3" data-cell="3" class="col-md-4 rounded board-cell"></div>
+      </div>
+      <div class="row">
+        <div id="cell-4" data-cell="4" class="col-md-4 rounded board-cell"></div>
+        <div id="cell-5" data-cell="5" class="col-md-4 rounded board-cell"></div>
+        <div id="cell-6" data-cell="6" class="col-md-4 rounded board-cell"></div>
+      </div>
+      <div class="row">
+        <div id="cell-7" data-cell="7" class="col-md-4 rounded board-cell"></div>
+        <div id="cell-8" data-cell="8" class="col-md-4 rounded board-cell"></div>
+        <div id="cell-9" data-cell="9" class="col-md-4 rounded board-cell"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h2 class="col-md-8 score-one">X Score:&nbsp;<span id="x-score"></span></h2>
+        <h2 class="col-md-2 score-two">O Score:&nbsp;<span id="o-score"></span></h2>
+      </div>
+    </div>
+    <div class="button-div">
+      <button id="reset-button" type="button" class="reset-button" style="">Reset</button>
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>

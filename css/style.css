@@ -1,0 +1,42 @@
+body.main-body {
+    background-color: hsl(218, 23%, 16%);
+}
+.board-cell {
+  height: 150px;
+  font-size: 100px;
+  text-align: center;
+  border: 3px solid hsl(150, 100%, 66%);
+  background-color: #e0ffff;
+}
+.board {
+  max-width: 550px;
+  margin-top: 4em;
+  border-style: solid;
+  border: 3px solid hsl(150, 100%, 66%);
+}
+.button-div {
+    text-align: center;
+    margin-top: 2em;
+}
+.score-one {
+  position: relative;
+  left: 220px;
+  color:#ff009d;
+}
+.score-two {
+  color:#ff009d;
+}
+.button-div {
+  margin: 0;
+  padding: 0;
+}
+.reset-button {
+  width: 7em;
+  height: 2.8em;
+  border: none;
+  border-radius: 20px;
+  font-size:18px;
+  background-color: hsl(150, 100%, 66%);
+  font-family: Verdana, Geneva, sans-serif;
+}
+
