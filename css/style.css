@@ -27,7 +27,6 @@ body {
    height: 500px;
    box-sizing: content-box;
    margin: 0 auto 0;
-   border: 2px solid white;
 }
 .board-cell {
    width: 166.6px;
