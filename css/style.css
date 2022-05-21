@@ -1,42 +1,92 @@
-body.main-body {
-    background-color: hsl(218, 23%, 16%);
+:root {
+   --magenta-color: #ff009d;
+   --white-color: hsl(0, 100%, 100%);
+   --darkblue-color: hsl(218, 23%, 16%); 
+   --lightgreen-color: hsl(150, 100%, 66%);
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html {
+   height: 100%;
+}
+body {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background-color: var(--lightgreen-color);
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.board-wrapper{
+   display: flex;
+   flex-flow: row wrap;
+   width: 500px;
+   height: 500px;
+   box-sizing: content-box;
+   margin: 0 auto 0;
+   border: 2px solid white;
 }
 .board-cell {
-  height: 150px;
-  font-size: 100px;
-  text-align: center;
-  border: 3px solid hsl(150, 100%, 66%);
-  background-color: #e0ffff;
+   width: 166.6px;
+   height: 166.6px;
+   border: 5px solid var(--darkblue-color);
+   font-size: 7rem;
+   text-align: center;
+   color: var(--magenta-color);
 }
-.board {
-  max-width: 550px;
-  margin-top: 4em;
-  border-style: solid;
-  border: 3px solid hsl(150, 100%, 66%);
+#cell-1 {
+   border-left: none;
+   border-top: none;
 }
-.button-div {
-    text-align: center;
-    margin-top: 2em;
+#cell-2 {
+   border-top: none;
 }
-.score-one {
-  position: relative;
-  left: 220px;
-  color:#ff009d;
+#cell-3 {
+   border-top: none;
+   border-right: none;
 }
-.score-two {
-  color:#ff009d;
+#cell-4 {
+   border-left: none;
 }
-.button-div {
-  margin: 0;
-  padding: 0;
+#cell-6 {
+   border-right: none;
 }
-.reset-button {
-  width: 7em;
-  height: 2.8em;
-  border: none;
-  border-radius: 20px;
-  font-size:18px;
-  background-color: hsl(150, 100%, 66%);
-  font-family: Verdana, Geneva, sans-serif;
+#cell-7 {
+   border-left: none;
+   border-bottom: none;
 }
-
+#cell-8 {
+   border-bottom: none;
+}
+#cell-9 {
+   border-right: none;
+   border-bottom: none;   
+}
+.score-wrapper {
+   width: 500px;
+   margin: 2rem auto 0;
+   display: flex;
+   justify-content: space-between;
+}  
+.score-wrapper .score-one,
+.score-wrapper .score-two {
+   color: var(--magenta-color);
+}
+.button-wrapper {
+   width: 500px;
+   margin: 2rem auto 0;
+   display: flex;
+   justify-content: center;
+}
+.button-wrapper > .reset-button {
+   padding: 0.6rem 1.8rem;
+   background-color: var(--magenta-color);
+   color: var(--white-color);
+   font-weight: 700;
+   font-size: 1.2rem;
+   border: none;
+   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.6);
+}
